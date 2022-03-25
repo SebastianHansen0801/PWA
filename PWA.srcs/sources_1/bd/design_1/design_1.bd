@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x0" bd:device="xc7a100tcsg324-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>DestinationDecoder_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="DestinationDecoder" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_DestinationDecoder_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">DestinationDecoder</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>RegisterR16_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="RegisterR16" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_RegisterR16_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">RegisterR16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>MUX16x1x8_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="MUX16x1x8" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_MUX16x1x8_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">MUX16x1x8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>MUX16x1x8_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="MUX16x1x8" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_MUX16x1x8_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">MUX16x1x8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>DestinationDecoder_0_LOAD</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DestinationDecoder_0" spirit:portRef="LOAD"/>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="LOAD"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R0"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R0"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R1"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R1"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R2"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R2"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R3"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R3"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R4"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R4"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R5</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R5"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R5"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R5"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R6</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R6"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R6"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R7</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R7"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R7"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R7"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R8</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R8"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R8"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R8"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R9</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R9"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R9"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R9"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R10</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R10"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R10"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R10"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R11</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R11"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R11"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R11"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R12</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R12"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R12"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R12"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R13</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R13"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R13"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R13"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R14</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R14"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R14"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R14"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RegisterR16_0_R15</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="RegisterR16_0" spirit:portRef="R15"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_0" spirit:portRef="R15"/>
+        <spirit:internalPortReference spirit:componentRef="MUX16x1x8_1" spirit:portRef="R15"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

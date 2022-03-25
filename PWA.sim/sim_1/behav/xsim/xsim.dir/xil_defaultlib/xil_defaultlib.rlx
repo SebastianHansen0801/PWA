@@ -1,0 +1,21 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sim_1/new/InstructionDecoderController_tb.vhd,1647526910,vhdl,,,,instructiondecodercontroller_tb,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sim_1/new/MUX16x1x8_tb.vhd,1645106412,vhdl,,,,mux16x8x1_tb,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd,1645701478,vhdl,,,,register_8bit,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd,1645690947,vhdl,,,,and2,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd,1645702273,vhdl,,,,d_ff_arst,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/InstructionDecoderController.vhd,1647526433,vhdl,,,,instructiondecodercontroller,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd,1645693379,vhdl,,,,mux16x1,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd,1645694343,vhdl,,,,mux16x1x8,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd,1645691340,vhdl,,,,mux2x1,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd,1645692149,vhdl,,,,mux4x1,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/OR2.vhd,1645690915,vhdl,,,,or2,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd,1645108003,vhdl,,,,registerr16,,,,,,,,
+/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd,1645696012,vhdl,,,,registerfile,,,,,,,,
+/zhome/5f/5/155462/MCU/new/NOT1.vhd,1644509852,vhdl,,,,not1,,,,,,,,
+/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd,1644513200,vhdl,,,,decoder_2_4,,,,,,,,
+/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd,1645097640,vhdl,,,,decoder_2_4_enable,,,,,,,,
+/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd,1645695012,vhdl,,,,destinationdecoder,,,,,,,,

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="36">
+  <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1646292652"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1646292652"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1646292652"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1646292652"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip/design_1_DestinationDecoder_0_0/design_1_DestinationDecoder_0_0.xci" Type="IP">
+        <Instance HierarchyPath="DestinationDecoder_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_RegisterR16_0_0/design_1_RegisterR16_0_0.xci" Type="IP">
+        <Instance HierarchyPath="RegisterR16_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_MUX16x1x8_0_0/design_1_MUX16x1x8_0_0.xci" Type="IP">
+        <Instance HierarchyPath="MUX16x1x8_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_MUX16x1x8_1_0/design_1_MUX16x1x8_1_0.xci" Type="IP">
+        <Instance HierarchyPath="MUX16x1x8_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

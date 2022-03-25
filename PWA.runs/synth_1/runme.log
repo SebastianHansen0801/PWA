@@ -1,0 +1,599 @@
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+Command: synth_design -top Datapath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19914 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1366.133 ; gain = 84.836 ; free physical = 30064 ; free virtual = 133645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Datapath' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/Datapath.vhd:49]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:34' bound to instance 'RF' of component 'RegisterFile' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/Datapath.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:43]
+INFO: [Synth 8-3491] module 'DestinationDecoder' declared at '/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:5' bound to instance 'U0' of component 'DestinationDecoder' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'DestinationDecoder' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:13]
+INFO: [Synth 8-3491] module 'decoder_2_4_enable' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:5' bound to instance 'g1' of component 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:13]
+INFO: [Synth 8-3491] module 'decoder_2_4' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:7' bound to instance 'g1' of component 'decoder_2_4' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'decoder_2_4' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:14]
+INFO: [Synth 8-3491] module 'NOT1' declared at '/zhome/5f/5/155462/MCU/new/NOT1.vhd:5' bound to instance 'g0' of component 'NOT1' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'NOT1' [/zhome/5f/5/155462/MCU/new/NOT1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'NOT1' (1#1) [/zhome/5f/5/155462/MCU/new/NOT1.vhd:12]
+INFO: [Synth 8-3491] module 'NOT1' declared at '/zhome/5f/5/155462/MCU/new/NOT1.vhd:5' bound to instance 'g1' of component 'NOT1' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:35]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g2' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_AND2' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_AND2' (2#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:40]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g3' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:38]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g4' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:39]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g5' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'decoder_2_4' (3#1) [/zhome/5f/5/155462/MCU/new/decoder_2_4.vhd:14]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g2' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:37]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g3' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:38]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g4' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:39]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'g5' of component 'AND2' [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'decoder_2_4_enable' (4#1) [/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:13]
+INFO: [Synth 8-3491] module 'decoder_2_4_enable' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:5' bound to instance 'g2' of component 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:29]
+INFO: [Synth 8-3491] module 'decoder_2_4_enable' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:5' bound to instance 'g3' of component 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:30]
+INFO: [Synth 8-3491] module 'decoder_2_4_enable' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:5' bound to instance 'g4' of component 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:31]
+INFO: [Synth 8-3491] module 'decoder_2_4_enable' declared at '/zhome/5f/5/155462/MCU/new/decoder_2_4_enable.vhd:5' bound to instance 'g5' of component 'decoder_2_4_enable' [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'DestinationDecoder' (5#1) [/zhome/5f/5/155462/MCU/new/decoder_4_16_enable.vhd:13]
+INFO: [Synth 8-3491] module 'RegisterR16' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:34' bound to instance 'U1' of component 'RegisterR16' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'RegisterR16' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:43]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U0' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:42]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'D_ff_arst' (6#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:43]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-3491] module 'D_ff_arst' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/D_ff_arst.vhd:34' bound to instance 'U0' of component 'D_ff_arst' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Register_8bit' (7#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:42]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U1' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:56]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U2' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:57]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U3' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:58]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U4' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:59]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U5' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:60]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U6' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:61]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U7' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:62]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U8' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:63]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U9' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:64]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U10' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:65]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U11' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:66]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U12' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:67]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U13' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:68]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U14' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:69]
+INFO: [Synth 8-3491] module 'Register_8bit' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/8bit_Register.vhd:34' bound to instance 'U15' of component 'Register_8bit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'RegisterR16' (8#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegisterR16.vhd:43]
+INFO: [Synth 8-3491] module 'MUX16x1x8' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:34' bound to instance 'U2' of component 'MUX16x1x8' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'MUX16x1x8' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:41]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:40]
+INFO: [Synth 8-3491] module 'MUX4x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:34' bound to instance 'U0' of component 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:40]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'U0' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'MUX2x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:41]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'U0' of component 'AND2' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:64]
+INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/AND2.vhd:34' bound to instance 'U1' of component 'AND2' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:65]
+INFO: [Synth 8-3491] module 'NOT1' declared at '/zhome/5f/5/155462/MCU/new/NOT1.vhd:5' bound to instance 'U2' of component 'NOT1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:66]
+INFO: [Synth 8-3491] module 'OR2' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/OR2.vhd:34' bound to instance 'U3' of component 'OR2' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_OR2' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/OR2.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_OR2' (9#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/OR2.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1' (10#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:41]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'U1' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:54]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'U2' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'MUX4x1' (11#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:40]
+INFO: [Synth 8-3491] module 'MUX4x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:34' bound to instance 'U0' of component 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:52]
+INFO: [Synth 8-3491] module 'MUX4x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:34' bound to instance 'U0' of component 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:52]
+INFO: [Synth 8-3491] module 'MUX4x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:34' bound to instance 'U0' of component 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:52]
+INFO: [Synth 8-3491] module 'MUX4x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX4x1.vhd:34' bound to instance 'U1' of component 'MUX4x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'MUX16x1' (12#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:40]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-3491] module 'MUX16x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1.vhd:34' bound to instance 'U0' of component 'MUX16x1' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'MUX16x1x8' (13#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:41]
+INFO: [Synth 8-3491] module 'MUX16x1x8' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX16x1x8.vhd:34' bound to instance 'U3' of component 'MUX16x1x8' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (14#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/RegsiterFile.vhd:43]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'function_unit' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:6' bound to instance 'FU' of component 'function_unit' [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/Datapath.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'function_unit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:15]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:9' bound to instance 'ALUU' of component 'ALU' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:19]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'arith_circuit' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:8' bound to instance 'AU' of component 'arith_circuit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'arith_circuit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:21]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:47]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'U0' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:17]
+INFO: [Synth 8-3491] module 'HalfAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/HalfAdder.vhd:6' bound to instance 'u1' of component 'HalfAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HalfAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/HalfAdder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'HalfAdder' (15#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/HalfAdder.vhd:13]
+INFO: [Synth 8-3491] module 'HalfAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/HalfAdder.vhd:6' bound to instance 'u2' of component 'HalfAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (16#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:17]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:59]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'Umsb' of component 'FullAdder' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'arith_circuit' (17#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/arith_circuit.vhd:21]
+INFO: [Synth 8-3491] module 'logic_unit' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/logic_unit.vhd:9' bound to instance 'LU' of component 'logic_unit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'logic_unit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/logic_unit.vhd:18]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logic_unit' (18#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/logic_unit.vhd:18]
+INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXS' of component 'MUX2x1x8' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'MUX2x1x8' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:16]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8' (19#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (20#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/ALU.vhd:19]
+INFO: [Synth 8-3491] module 'F_sel' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/F_sel.vhd:8' bound to instance 'FSEL' of component 'F_sel' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'F_sel' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/F_sel.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'F_sel' (21#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/F_sel.vhd:14]
+INFO: [Synth 8-3491] module 'shifter_8bit' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:5' bound to instance 'SHIFT' of component 'shifter_8bit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'shifter_8bit' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:12]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'U0_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX3x1' (22#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:13]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:30]
+INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'shifter_8bit' (23#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/shifter_8bit.vhd:12]
+INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXF' of component 'MUX2x1x8' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:61]
+INFO: [Synth 8-3491] module 'NegZero' declared at '/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/NegZero.vhd:6' bound to instance 'NZ' of component 'NegZero' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:62]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'NegZero' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/NegZero.vhd:13]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NegZero' (24#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/NegZero.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'function_unit' (25#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/function_unit.vhd:15]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MUX2x1x8__parameterized1' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:16]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8__parameterized1' (25#1) [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX2x1x8.vhd:16]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (26#1) [/zhome/5f/5/155462/MCU project/PWA/PWA.srcs/sources_1/new/Datapath.vhd:49]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1410.773 ; gain = 129.477 ; free physical = 30066 ; free virtual = 133648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1410.773 ; gain = 129.477 ; free physical = 30076 ; free virtual = 133658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1420.770 ; gain = 139.473 ; free physical = 30076 ; free virtual = 133658
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Zz" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'O_reg' [/zhome/5f/5/155462/Desktop/Functionalunit/Functionalunit.srcs/sources_1/new/MUX3x1.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1436.781 ; gain = 155.484 ; free physical = 30067 ; free virtual = 133649
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	                1 Bit    Registers := 128   
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module D_ff_arst 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module HalfAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module logic_unit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module MUX2x1x8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module MUX3x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module NegZero 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX2x1x8__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "FU/NZ/Zz" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[0].lsb.U0_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[1].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[2].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[3].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[4].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[5].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[6].bits.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (FU/SHIFT/GEN_MUXS[7].msb.UX_MUX3x1/O_reg) is unused and will be removed from module Datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29886 ; free virtual = 133470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29885 ; free virtual = 133468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29886 ; free virtual = 133469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     4|
+|3     |LUT2  |     1|
+|4     |LUT3  |    13|
+|5     |LUT4  |     9|
+|6     |LUT5  |    51|
+|7     |LUT6  |    76|
+|8     |MUXF7 |    28|
+|9     |MUXF8 |     6|
+|10    |FDCE  |   128|
+|11    |IBUF  |    37|
+|12    |OBUF  |    20|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------------+------+
+|      |Instance            |Module           |Cells |
++------+--------------------+-----------------+------+
+|1     |top                 |                 |   374|
+|2     |  RF                |RegisterFile     |   316|
+|3     |    U1              |RegisterR16      |   316|
+|4     |      U0            |Register_8bit    |     9|
+|5     |        \gen[0].U0  |D_ff_arst_134    |     1|
+|6     |        \gen[1].U0  |D_ff_arst_135    |     1|
+|7     |        \gen[2].U0  |D_ff_arst_136    |     1|
+|8     |        \gen[3].U0  |D_ff_arst_137    |     1|
+|9     |        \gen[4].U0  |D_ff_arst_138    |     1|
+|10    |        \gen[5].U0  |D_ff_arst_139    |     1|
+|11    |        \gen[6].U0  |D_ff_arst_140    |     1|
+|12    |        \gen[7].U0  |D_ff_arst_141    |     2|
+|13    |      U1            |Register_8bit_0  |    11|
+|14    |        \gen[0].U0  |D_ff_arst_126    |     1|
+|15    |        \gen[1].U0  |D_ff_arst_127    |     1|
+|16    |        \gen[2].U0  |D_ff_arst_128    |     1|
+|17    |        \gen[3].U0  |D_ff_arst_129    |     1|
+|18    |        \gen[4].U0  |D_ff_arst_130    |     2|
+|19    |        \gen[5].U0  |D_ff_arst_131    |     1|
+|20    |        \gen[6].U0  |D_ff_arst_132    |     1|
+|21    |        \gen[7].U0  |D_ff_arst_133    |     3|
+|22    |      U10           |Register_8bit_1  |     9|
+|23    |        \gen[0].U0  |D_ff_arst_118    |     1|
+|24    |        \gen[1].U0  |D_ff_arst_119    |     1|
+|25    |        \gen[2].U0  |D_ff_arst_120    |     1|
+|26    |        \gen[3].U0  |D_ff_arst_121    |     1|
+|27    |        \gen[4].U0  |D_ff_arst_122    |     1|
+|28    |        \gen[5].U0  |D_ff_arst_123    |     1|
+|29    |        \gen[6].U0  |D_ff_arst_124    |     1|
+|30    |        \gen[7].U0  |D_ff_arst_125    |     2|
+|31    |      U11           |Register_8bit_2  |    64|
+|32    |        \gen[0].U0  |D_ff_arst_110    |    10|
+|33    |        \gen[1].U0  |D_ff_arst_111    |     8|
+|34    |        \gen[2].U0  |D_ff_arst_112    |    10|
+|35    |        \gen[3].U0  |D_ff_arst_113    |    11|
+|36    |        \gen[4].U0  |D_ff_arst_114    |     5|
+|37    |        \gen[5].U0  |D_ff_arst_115    |     8|
+|38    |        \gen[6].U0  |D_ff_arst_116    |     8|
+|39    |        \gen[7].U0  |D_ff_arst_117    |     4|
+|40    |      U12           |Register_8bit_3  |     9|
+|41    |        \gen[0].U0  |D_ff_arst_102    |     1|
+|42    |        \gen[1].U0  |D_ff_arst_103    |     1|
+|43    |        \gen[2].U0  |D_ff_arst_104    |     1|
+|44    |        \gen[3].U0  |D_ff_arst_105    |     1|
+|45    |        \gen[4].U0  |D_ff_arst_106    |     1|
+|46    |        \gen[5].U0  |D_ff_arst_107    |     1|
+|47    |        \gen[6].U0  |D_ff_arst_108    |     1|
+|48    |        \gen[7].U0  |D_ff_arst_109    |     2|
+|49    |      U13           |Register_8bit_4  |     9|
+|50    |        \gen[0].U0  |D_ff_arst_94     |     1|
+|51    |        \gen[1].U0  |D_ff_arst_95     |     1|
+|52    |        \gen[2].U0  |D_ff_arst_96     |     1|
+|53    |        \gen[3].U0  |D_ff_arst_97     |     1|
+|54    |        \gen[4].U0  |D_ff_arst_98     |     1|
+|55    |        \gen[5].U0  |D_ff_arst_99     |     1|
+|56    |        \gen[6].U0  |D_ff_arst_100    |     1|
+|57    |        \gen[7].U0  |D_ff_arst_101    |     2|
+|58    |      U14           |Register_8bit_5  |     9|
+|59    |        \gen[0].U0  |D_ff_arst_86     |     1|
+|60    |        \gen[1].U0  |D_ff_arst_87     |     1|
+|61    |        \gen[2].U0  |D_ff_arst_88     |     1|
+|62    |        \gen[3].U0  |D_ff_arst_89     |     1|
+|63    |        \gen[4].U0  |D_ff_arst_90     |     1|
+|64    |        \gen[5].U0  |D_ff_arst_91     |     1|
+|65    |        \gen[6].U0  |D_ff_arst_92     |     1|
+|66    |        \gen[7].U0  |D_ff_arst_93     |     2|
+|67    |      U15           |Register_8bit_6  |    35|
+|68    |        \gen[0].U0  |D_ff_arst_78     |     4|
+|69    |        \gen[1].U0  |D_ff_arst_79     |     3|
+|70    |        \gen[2].U0  |D_ff_arst_80     |     3|
+|71    |        \gen[3].U0  |D_ff_arst_81     |     3|
+|72    |        \gen[4].U0  |D_ff_arst_82     |     9|
+|73    |        \gen[5].U0  |D_ff_arst_83     |     3|
+|74    |        \gen[6].U0  |D_ff_arst_84     |     3|
+|75    |        \gen[7].U0  |D_ff_arst_85     |     7|
+|76    |      U2            |Register_8bit_7  |     9|
+|77    |        \gen[0].U0  |D_ff_arst_70     |     1|
+|78    |        \gen[1].U0  |D_ff_arst_71     |     1|
+|79    |        \gen[2].U0  |D_ff_arst_72     |     1|
+|80    |        \gen[3].U0  |D_ff_arst_73     |     1|
+|81    |        \gen[4].U0  |D_ff_arst_74     |     1|
+|82    |        \gen[5].U0  |D_ff_arst_75     |     1|
+|83    |        \gen[6].U0  |D_ff_arst_76     |     1|
+|84    |        \gen[7].U0  |D_ff_arst_77     |     2|
+|85    |      U3            |Register_8bit_8  |    80|
+|86    |        \gen[0].U0  |D_ff_arst_62     |     7|
+|87    |        \gen[1].U0  |D_ff_arst_63     |    11|
+|88    |        \gen[2].U0  |D_ff_arst_64     |    12|
+|89    |        \gen[3].U0  |D_ff_arst_65     |    14|
+|90    |        \gen[4].U0  |D_ff_arst_66     |     3|
+|91    |        \gen[5].U0  |D_ff_arst_67     |    10|
+|92    |        \gen[6].U0  |D_ff_arst_68     |    13|
+|93    |        \gen[7].U0  |D_ff_arst_69     |    10|
+|94    |      U4            |Register_8bit_9  |     9|
+|95    |        \gen[0].U0  |D_ff_arst_54     |     1|
+|96    |        \gen[1].U0  |D_ff_arst_55     |     1|
+|97    |        \gen[2].U0  |D_ff_arst_56     |     1|
+|98    |        \gen[3].U0  |D_ff_arst_57     |     1|
+|99    |        \gen[4].U0  |D_ff_arst_58     |     1|
+|100   |        \gen[5].U0  |D_ff_arst_59     |     1|
+|101   |        \gen[6].U0  |D_ff_arst_60     |     1|
+|102   |        \gen[7].U0  |D_ff_arst_61     |     2|
+|103   |      U5            |Register_8bit_10 |     9|
+|104   |        \gen[0].U0  |D_ff_arst_46     |     1|
+|105   |        \gen[1].U0  |D_ff_arst_47     |     1|
+|106   |        \gen[2].U0  |D_ff_arst_48     |     1|
+|107   |        \gen[3].U0  |D_ff_arst_49     |     1|
+|108   |        \gen[4].U0  |D_ff_arst_50     |     1|
+|109   |        \gen[5].U0  |D_ff_arst_51     |     1|
+|110   |        \gen[6].U0  |D_ff_arst_52     |     1|
+|111   |        \gen[7].U0  |D_ff_arst_53     |     2|
+|112   |      U6            |Register_8bit_11 |     9|
+|113   |        \gen[0].U0  |D_ff_arst_38     |     1|
+|114   |        \gen[1].U0  |D_ff_arst_39     |     1|
+|115   |        \gen[2].U0  |D_ff_arst_40     |     1|
+|116   |        \gen[3].U0  |D_ff_arst_41     |     1|
+|117   |        \gen[4].U0  |D_ff_arst_42     |     1|
+|118   |        \gen[5].U0  |D_ff_arst_43     |     1|
+|119   |        \gen[6].U0  |D_ff_arst_44     |     1|
+|120   |        \gen[7].U0  |D_ff_arst_45     |     2|
+|121   |      U7            |Register_8bit_12 |    25|
+|122   |        \gen[0].U0  |D_ff_arst_30     |     3|
+|123   |        \gen[1].U0  |D_ff_arst_31     |     3|
+|124   |        \gen[2].U0  |D_ff_arst_32     |     3|
+|125   |        \gen[3].U0  |D_ff_arst_33     |     3|
+|126   |        \gen[4].U0  |D_ff_arst_34     |     3|
+|127   |        \gen[5].U0  |D_ff_arst_35     |     3|
+|128   |        \gen[6].U0  |D_ff_arst_36     |     3|
+|129   |        \gen[7].U0  |D_ff_arst_37     |     4|
+|130   |      U8            |Register_8bit_13 |     9|
+|131   |        \gen[0].U0  |D_ff_arst_22     |     1|
+|132   |        \gen[1].U0  |D_ff_arst_23     |     1|
+|133   |        \gen[2].U0  |D_ff_arst_24     |     1|
+|134   |        \gen[3].U0  |D_ff_arst_25     |     1|
+|135   |        \gen[4].U0  |D_ff_arst_26     |     1|
+|136   |        \gen[5].U0  |D_ff_arst_27     |     1|
+|137   |        \gen[6].U0  |D_ff_arst_28     |     1|
+|138   |        \gen[7].U0  |D_ff_arst_29     |     2|
+|139   |      U9            |Register_8bit_14 |    11|
+|140   |        \gen[0].U0  |D_ff_arst        |     1|
+|141   |        \gen[1].U0  |D_ff_arst_15     |     1|
+|142   |        \gen[2].U0  |D_ff_arst_16     |     1|
+|143   |        \gen[3].U0  |D_ff_arst_17     |     1|
+|144   |        \gen[4].U0  |D_ff_arst_18     |     2|
+|145   |        \gen[5].U0  |D_ff_arst_19     |     1|
+|146   |        \gen[6].U0  |D_ff_arst_20     |     1|
+|147   |        \gen[7].U0  |D_ff_arst_21     |     3|
++------+--------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29887 ; free virtual = 133470
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29890 ; free virtual = 133473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:48 . Memory (MB): peak = 1576.160 ; gain = 294.863 ; free physical = 29901 ; free virtual = 133484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:51 . Memory (MB): peak = 1716.301 ; gain = 435.160 ; free physical = 29866 ; free virtual = 133449
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/zhome/5f/5/155462/MCU project/PWA/PWA.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.97 . Memory (MB): peak = 1746.324 ; gain = 0.000 ; free physical = 29805 ; free virtual = 133388
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 17 14:57:16 2022...

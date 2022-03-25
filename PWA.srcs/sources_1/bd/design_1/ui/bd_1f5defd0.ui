@@ -1,0 +1,31 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace inst DestinationDecoder_0 -pg 1 -lvl 1 -y 610 -defaultsOSRD
+preplace inst RegisterR16_0 -pg 1 -lvl 2 -y 600 -defaultsOSRD
+preplace inst MUX16x1x8_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst MUX16x1x8_1 -pg 1 -lvl 3 -y 740 -defaultsOSRD
+preplace netloc RegisterR16_0_R14 1 2 1 410
+preplace netloc DestinationDecoder_0_LOAD 1 1 1 N
+preplace netloc RegisterR16_0_R15 1 2 1 420
+preplace netloc RegisterR16_0_R0 1 2 1 270
+preplace netloc RegisterR16_0_R1 1 2 1 280
+preplace netloc RegisterR16_0_R2 1 2 1 290
+preplace netloc RegisterR16_0_R3 1 2 1 300
+preplace netloc RegisterR16_0_R4 1 2 1 310
+preplace netloc RegisterR16_0_R5 1 2 1 320
+preplace netloc RegisterR16_0_R6 1 2 1 330
+preplace netloc RegisterR16_0_R7 1 2 1 340
+preplace netloc RegisterR16_0_R10 1 2 1 370
+preplace netloc RegisterR16_0_R8 1 2 1 350
+preplace netloc RegisterR16_0_R11 1 2 1 380
+preplace netloc RegisterR16_0_R9 1 2 1 360
+preplace netloc RegisterR16_0_R12 1 2 1 390
+preplace netloc RegisterR16_0_R13 1 2 1 400
+levelinfo -pg 1 -390 -230 140 620 770 -top -80 -bot 980
+",
+}
+{
+   da_clkrst_cnt: "1",
+}
